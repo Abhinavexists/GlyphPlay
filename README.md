@@ -26,7 +26,7 @@ A gestural font editor that allows you to manipulate typography using hand gestu
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Abhinavexists/GlyphPlay.git
    cd GlyphPlay
    ```
 
@@ -82,43 +82,6 @@ python main.py
 - Change the angle between fingers to control smoothness
 - Range: 0 to 6
 
-## Technical Details
-
-- **Hand Detection**: MediaPipe Hands with 21 landmark points
-- **Font Rendering**: Stroke-based vector graphics
-- **Animation**: Perlin noise for organic distortion effects
-- **Smoothing**: B-spline interpolation for smooth curves
-- **Real-time Processing**: 60 FPS camera feed processing
-
-## File Structure
-
-```
-GlyphPlay/
-├── main.py              # OpenCV-based interface
-├── glyphplay_qt.py      # PyQt6 GUI interface
-├── font_data.py         # Font stroke definitions
-├── requirements.txt     # Python dependencies
-├── pyproject.toml       # Project configuration
-└── README.md           # This file
-```
-
-## Troubleshooting
-
-### Camera Issues
-- Ensure your webcam is connected and accessible
-- Check camera permissions in your OS
-- Try different camera indices if detection fails
-
-### Hand Detection Issues
-- Ensure good lighting conditions
-- Keep your hand clearly visible to the camera
-- Avoid rapid movements that might confuse the detection
-
-### Performance Issues
-- Close other applications using the camera
-- Reduce window size if experiencing lag
-- Ensure you have sufficient CPU resources
-
 ## Contributing
 
 1. Fork the repository
@@ -130,9 +93,3 @@ GlyphPlay/
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- MediaPipe for hand landmark detection
-- PyQt6 for the GUI framework
-- OpenCV for computer vision capabilities
